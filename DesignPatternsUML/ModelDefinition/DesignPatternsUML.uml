@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bf8249b7-a100-4fa7-9ae3-822ca7af2bbd"
+  name="DesignPatternsUML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="e76ef582-42b7-4a7b-83ab-9939ad9da3da">
+      <body>We have the dll but not code.</body>
+    </comment>
+    <comment
+      Id="e70c1b3d-0c98-4f65-b9bd-8e68c0df496d">
+      <body>We have the dll but not code.</body>
+    </comment>
+    <comment
+      Id="36ba9196-3e07-443c-96e5-e913cc432e32">
+      <body>This is the code that we write.</body>
+    </comment>
+    <comment
+      Id="aa3f0390-47b7-41e9-ae27-1f8342133916">
+      <body>Interfaces provided by hardware supplier.</body>
+    </comment>
+    <comment
+      Id="cd224634-d56c-4e20-96bc-7b52453eef1b">
+      <body>Delegate the behavior. Do not implement it.</body>
+    </comment>
+    <comment
+      Id="e5c9f198-01a8-4f5f-b1e4-954f4d65b72f">
+      <body>Subclasses have different behaviors.
+
+Can't modify super class.
+
+Overriding subclass methods is duplicate code.</body>
+    </comment>
+    <comment
+      Id="41fade0a-935b-4bca-a3f1-0e92d55fe6b4">
+      <body>Other objects can reuse the behaviors.
+
+Add new behaviors without touching existing codebase.</body>
+    </comment>
+    <comment
+      Id="9e3894bd-c315-4f01-aa10-e6a8da3fed44">
+      <body>The client makes a request to the adapter by calling a method on it using the target interface.
+
+The adapter translates the request into one or more calls on the adaptee using the adpatee interface.
+
+The client receives the results of the call and never knows there is an adapter doing the translation.
+</body>
+    </comment>
+    <comment
+      Id="aad939c0-5cf6-444d-993a-ea705b01cfbc">
+      <body>Can break this link w/ ICE, PRISM or WCF
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="70c3daa7-875c-4f5a-9d83-f94e71a69e47">
+      <profileInstance
+        Id="2c522e54-607e-4b06-81cf-27f4aa524a46"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="96b98599-9b44-4ebc-bd79-7ec93f0ea117"
+        LastKnownName="StrategyPattern"
+        LastKnownLocation="Package_1426.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5f5633aa-510a-4cdc-8540-a695499e94cf"
+        LastKnownName="Singleton_Pattern"
+        LastKnownLocation="Package_1432.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ddaf1da5-0a29-4b1f-b95c-eb1bfbaede8a"
+        LastKnownName="System"
+        LastKnownLocation="Package1_1432.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="3fb410c5-03d7-4968-86ab-314787de6659"
+        LastKnownName="Adapter_Pattern"
+        LastKnownLocation="Package_1435.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cb80a267-654b-4f5f-91cf-df78cc163538"
+        name="TvStation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1bff6e42-0c29-4fe0-bb52-8ef0fb1a027a"
+            isDerived="false"
+            sourceEndRoleName="TvStation"
+            targetEndRoleName="WxReporter"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6933eee1-f46c-4279-b955-62e717333214"
+              LastKnownName="WxReporter"
+              LastKnownLocation="DesignPatternsUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d45cc1b3-5fb6-4564-96f6-c477b69e8b08"
+                  name="TvStation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9becce2c-ccca-4f48-b59f-fbf2ab533a84"
+                  name="WxReporter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="aa8fdbea-63ff-4a91-b9fe-fd90450c1bc8"
+            isDerived="false"
+            sourceEndRoleName="TvStation"
+            targetEndRoleName="WxReport"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6cfed300-6aa3-4dba-94b5-e1225cadd897"
+              LastKnownName="WxReport"
+              LastKnownLocation="DesignPatternsUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aed5fed4-1ad7-425c-adab-6daa534c9a6d"
+                  name="TvStation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e8c06a1-487a-4ef0-960d-9c10b0b6db89"
+                  name="WxReport"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="65ca5889-68f9-41b2-a0f2-e9c917745803"
+            name="Callsign"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8fa9a96d-3d62-4270-92c0-7d22e53364f9"
+            name="WxReport"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="abdd4cab-f20b-4516-a379-4fcb5c172156"
+            name="WxReporter"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="310ce39f-0dd7-4e3a-9f49-f6c1791aec0c"
+            name="Run"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2be10374-7b35-45c4-8420-a75d4fb9712b"
+            name="Quit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a34d3979-6096-4ae9-bd99-d5c6244139b5"
+            name="ReceiveWxReports"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ad3e1a8a-734d-4600-a6cc-d09ff754fbbf"
+        name="WxStation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="01cdaa9a-08d6-41ec-b940-ab807ca60312"
+            isDerived="false"
+            sourceEndRoleName="WxStation"
+            targetEndRoleName="WxReporter"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6933eee1-f46c-4279-b955-62e717333214"
+              LastKnownName="WxReporter"
+              LastKnownLocation="DesignPatternsUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="447509ab-0893-40ba-b54d-023983fc960e"
+                  name="WxStation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bdb3a27c-cbf7-4539-9e42-e65e5f56c081"
+                  name="WxReporter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="60bef840-da2e-4a47-ae42-d245091dc445"
+            isDerived="false"
+            sourceEndRoleName="WxStation"
+            targetEndRoleName="WxReport"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6cfed300-6aa3-4dba-94b5-e1225cadd897"
+              LastKnownName="WxReport"
+              LastKnownLocation="DesignPatternsUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="22cd1509-7b50-44ec-9e7e-950f71ce394e"
+                  name="WxStation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3d97267-9dc4-402e-8d80-78a71a334ee1"
+                  name="WxReport"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="21048e72-178b-4914-a531-90b4bb3db6bc"
+            name="Location"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="79da2a25-5268-451d-86cd-b1824b0b47e4"
+            name="WxReport"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="087fb6c0-b63f-4074-8d71-21560cd7adbf"
+            name="WxReporter"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b920c0bd-7f01-46be-a98e-fe4e365ff7b5"
+            name="Run"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a131be36-99fa-4f34-a853-87b886b723a4"
+            name="Quit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="027c17dc-f93e-4a22-ac42-9bdf3b86d7f6"
+            name="IssueWxReports"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6cfed300-6aa3-4dba-94b5-e1225cadd897"
+        name="WxReport"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6933eee1-f46c-4279-b955-62e717333214"
+        name="WxReporter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0b0e6f27-a7f4-4ba6-834a-0284c147b4cd"
+        name="Main Window"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="55b580c1-659d-4b13-880a-29baac743cfd"
+            name="label CurrentTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8cd31739-77b3-4221-8c43-7dfdf05bcb5a"
+            name="Button GetCurrentTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4cd9a605-a275-4e6d-9e28-15db0f94e0f1"
+        name="View Model"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7422d7d1-2746-48e5-b0d8-e9672266097e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0ff814cb-f1f8-47dc-9805-5724ba093da1"
+              LastKnownName="ViewModelBase"
+              LastKnownLocation="DesignPatternsUML.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="17946347-ef5a-4153-843d-690c7b47bcbf"
+            isDerived="false"
+            sourceEndRoleName="View Model"
+            targetEndRoleName="Main Window"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0b0e6f27-a7f4-4ba6-834a-0284c147b4cd"
+              LastKnownName="Main Window"
+              LastKnownLocation="DesignPatternsUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0b11cfd-33db-484b-bce0-bddd724263ef"
+                  name="View Model"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a3142d6-af84-4a60-8a92-ca010898dfb7"
+                  name="Main Window"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a7a11dba-0518-47ea-b031-2ccd260f378b"
+            name="CurrentTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="641843d9-ced9-4291-ace5-ad8aaaf05de5"
+            name="ICommand GetCurrentTimeCommand"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1f9ec474-045c-4415-970a-63aa08a32c2d"
+            name="bool CanGetCurrentTimeCommand"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8605e1eb-8d2b-43f9-a764-cf7d0a9c3345"
+            name="GetCurrentTime"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="795de16f-e748-4194-a226-f44f4cffc74d"
+        name="Model"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e0dcdffc-1aac-4dd6-881a-033d7ac9811a"
+            isDerived="false"
+            sourceEndRoleName="Model"
+            targetEndRoleName="View Model"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4cd9a605-a275-4e6d-9e28-15db0f94e0f1"
+              LastKnownName="View Model"
+              LastKnownLocation="DesignPatternsUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cec24f35-6109-4117-839a-06ed255b13ae"
+                  name="Model"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="47675ceb-0bed-45bd-9474-ed033c5be003"
+                  name="View Model"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="bcef42e0-3688-46e1-88f4-4962ba7acbfe"
+            name="string CurrentTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="898d17b7-8f73-4a12-b1d4-e357eb828371"
+        name="RelayCommand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2544fb00-2a4c-469c-9e31-2ead3447d21a">
+            <interfaceMoniker
+              Id="889a895a-0bc7-4037-ace4-7e9e562f8580"
+              LastKnownName="ICommand"
+              LastKnownLocation="DesignPatternsUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="0bd7316d-7386-411c-8ae2-84a7844cd61a"
+            isDerived="false"
+            sourceEndRoleName="RelayCommand"
+            targetEndRoleName="View Model"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4cd9a605-a275-4e6d-9e28-15db0f94e0f1"
+              LastKnownName="View Model"
+              LastKnownLocation="DesignPatternsUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="09125ee2-02cc-43f8-b325-18afbdcf37e5"
+                  name="RelayCommand"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6bdda125-4618-4a68-9d61-0bf07bcc7137"
+                  name="View Model"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1bd8e898-c5e0-4d17-b13b-f33a0def7c90"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="169844ca-4b54-4df9-92f9-8aab1e4f2f92"
+            name="Action&lt;object&gt; execute"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c865303f-6fa6-4029-b295-bbfb22d7276a"
+            name="Predicate&lt;object&gt; canExecute"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fb24586a-6799-4caa-83da-0c15f2236339"
+            name="RelayCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92490c9f-13fe-4995-b619-322f39dec481"
+                  name="Action"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="579479ea-df39-4112-813d-22004521abbe"
+                  name="Predicate"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="748c3c3f-ea39-4285-9005-3816b4734829"
+            name="void Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="91d07c7d-d375-4b2f-8f2a-913fe63abc0a"
+                  name="object"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8a7ebe91-6670-4093-b4f9-c9cd6c121768"
+            name="bool CanExecute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5ed34a8f-c2e9-4d31-ae48-828caeda171e"
+                  name="object"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="60415810-c982-429b-b748-a9351352a9f0"
+            name="event CanExecuteChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="889a895a-0bc7-4037-ace4-7e9e562f8580"
+        name="ICommand"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="8bfa7fdb-2959-4d31-8767-ebce84035352"
+            name="bool CanExecute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="58c31461-ca5d-48aa-a3aa-f0ec90b87007"
+                  name="object"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7850a84c-d727-41e6-a80b-c137e16d6f1b"
+            name="void Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="db06bf4a-b2d0-48c2-b8d5-8bd17bb1cfee"
+                  name="object"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bc5824f3-4ac2-40f2-93a4-5a862b302326"
+            name="event CanExecuteChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0ff814cb-f1f8-47dc-9805-5724ba093da1"
+        name="ViewModelBase"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="585e149b-edd2-4ab4-8037-cc07f167100e">
+            <interfaceMoniker
+              Id="d93725bf-d0bb-44b7-a548-b53d5ef92ad0"
+              LastKnownName="INotifyPropertyChanged"
+              LastKnownLocation="DesignPatternsUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e805a537-56fb-4888-823b-c76a4ccefb4a"
+            name="event PropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d93725bf-d0bb-44b7-a548-b53d5ef92ad0"
+        name="INotifyPropertyChanged"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="6e4a72ba-d059-4dda-a344-8cfc4844fb60"
+            name="event PropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

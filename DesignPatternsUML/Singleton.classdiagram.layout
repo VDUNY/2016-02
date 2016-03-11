@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Singleton">
+  <logicalClassDesignerModelMoniker Id="45735c61-4ff9-45d0-b0db-dd02f6e6937d" />
+  <nestedChildShapes>
+    <classShape Id="54e09978-bd37-4403-93e1-ff437e37d36e" absoluteBounds="2.5, 3.125, 3.625, 2.4690855797131861" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="77fe13d4-ba46-4d84-9659-728c16a7ad41" LastKnownName="CameraHardware" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="9aecabf4-646f-41e0-9369-bb47b4240c59" absoluteBounds="2.515, 3.6403356393178306, 3.5949999999999998, 1.0019530927141505" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="274296b0-03aa-43a6-9607-78fa2e6c15f2" absoluteBounds="2.515, 4.6522887320319812, 3.5949999999999998, 0.84179684768120455" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6debb92f-08a2-45c6-a602-d81ebd5ccdc8" absoluteBounds="2.5, 0.5, 3.625, 1.3479918644825619" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="360c313c-4d07-4356-8936-bcd6422b978a" LastKnownName="SingletonPattern" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="022f799a-bc3e-4cee-985e-f749bce42923" absoluteBounds="2.515, 1.0153356393178306, 3.5949999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="346753b3-362a-4d55-bbbc-f63d8fd4bebd" absoluteBounds="2.515, 1.2265075068672497, 3.5949999999999998, 0.521484357615312" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

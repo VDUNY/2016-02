@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2d6050d4-cbff-440b-a4d9-779a134f3f98" name="Command" linkedPackageId="537c9736-ddb6-4b1e-b39d-1ab3b0dbab62" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ba7fccb7-30d3-45c1-9d46-e3dcf99e44c9" name="Main Window" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0b0e6f27-a7f4-4ba6-834a-0284c147b4cd" />
+        <ownedAttributesInternal>
+          <property Id="ca3c01eb-46eb-43f6-b9a4-88a9b5667f04" name="label CurrentTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="55b580c1-659d-4b13-880a-29baac743cfd" />
+          </property>
+          <property Id="2f16764a-a936-4545-9e39-a7240343c90d" name="Button GetCurrentTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8cd31739-77b3-4221-8c43-7dfdf05bcb5a" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="19c651e1-5075-41df-aff5-59e41cc7e328" name="View Model" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4cd9a605-a275-4e6d-9e28-15db0f94e0f1" />
+        <generalsInternal>
+          <generalization Id="bbfad82b-03a3-4005-ad30-b8ea612110ec" isSubstitutable="false">
+            <classMoniker Id="71540da0-965b-42ba-b7a6-f295fe885c4a" LastKnownName="ViewModelBase" />
+            <elementDefinition Id="7422d7d1-2746-48e5-b0d8-e9672266097e" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="0b93d626-b74f-4729-9bd4-46fa124362ba" isDerived="false" sourceEndRoleName="View Model" targetEndRoleName="Main Window" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ba7fccb7-30d3-45c1-9d46-e3dcf99e44c9" LastKnownName="Main Window" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75ee4abd-cec8-47fb-95d2-bef7f8a5e183" name="View Model" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f0b11cfd-33db-484b-bce0-bddd724263ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d0dd202-d128-4fb9-a673-70f99d383be1" name="Main Window" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4a3142d6-af84-4a60-8a92-ca010898dfb7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="17946347-ef5a-4153-843d-690c7b47bcbf" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b1966852-2594-4224-9d3e-e2f30309165d" name="CurrentTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a7a11dba-0518-47ea-b031-2ccd260f378b" />
+          </property>
+          <property Id="d16e9b4a-598e-4ff3-ba34-8840bafb3d7d" name="ICommand GetCurrentTimeCommand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="641843d9-ced9-4291-ace5-ad8aaaf05de5" />
+          </property>
+          <property Id="a64caf81-ddb4-4078-bc89-adacf275d68e" name="bool CanGetCurrentTimeCommand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1f9ec474-045c-4415-970a-63aa08a32c2d" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8d9219b3-1764-465b-8e25-7a2fad96e1d3" name="GetCurrentTime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8605e1eb-8d2b-43f9-a764-cf7d0a9c3345" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="680fb7c6-3575-49ab-9e74-aecb442427c7" name="Model" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="795de16f-e748-4194-a226-f44f4cffc74d" />
+        <targetEnds>
+          <association Id="722f8be5-0cad-40c3-be56-f66392ece25a" isDerived="false" sourceEndRoleName="Model" targetEndRoleName="View Model" isLeaf="false" isAbstract="false">
+            <classMoniker Id="19c651e1-5075-41df-aff5-59e41cc7e328" LastKnownName="View Model" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf904c3f-ad1b-4354-bc62-00147d7a7d9a" name="Model" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cec24f35-6109-4117-839a-06ed255b13ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16595c71-5cb6-4428-8d71-8156c0d65afd" name="View Model" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="47675ceb-0bed-45bd-9474-ed033c5be003" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e0dcdffc-1aac-4dd6-881a-033d7ac9811a" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="6dfcbf9e-d2bf-48f1-a703-fc197b1ebb6a" name="string CurrentTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bcef42e0-3688-46e1-88f4-4962ba7acbfe" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="50d57d3e-bd2e-4531-a20b-8cf6c7c334c7" name="RelayCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="898d17b7-8f73-4a12-b1d4-e357eb828371" />
+        <suppliersInternal>
+          <interfaceRealization Id="ba8c585c-371e-45cb-a0dc-b803e22ab27d">
+            <interfaceMoniker Id="8554c43a-529d-401e-b854-be8ea71fc521" LastKnownName="ICommand" />
+            <elementDefinition Id="2544fb00-2a4c-469c-9e31-2ead3447d21a" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="33ed84e1-6e8f-42ac-a8e3-f901abe33bd8" isDerived="false" sourceEndRoleName="RelayCommand" targetEndRoleName="View Model" isLeaf="false" isAbstract="false">
+            <classMoniker Id="19c651e1-5075-41df-aff5-59e41cc7e328" LastKnownName="View Model" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="109681a7-eaf6-45d2-9f70-e6ad94575946" name="RelayCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="09125ee2-02cc-43f8-b325-18afbdcf37e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8815991-ae5e-494c-9cfe-bf562f45d4e9" name="View Model" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6bdda125-4618-4a68-9d61-0bf07bcc7137" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0bd7316d-7386-411c-8ae2-84a7844cd61a" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a8e7675f-1745-4a17-8821-8f83870b0426" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1bd8e898-c5e0-4d17-b13b-f33a0def7c90" />
+          </property>
+          <property Id="e263c983-5d48-4c1c-8600-d633ad482705" name="Action&lt;object&gt; execute" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="169844ca-4b54-4df9-92f9-8aab1e4f2f92" />
+          </property>
+          <property Id="efb64a5d-bcda-4018-8211-461a9c205d66" name="Predicate&lt;object&gt; canExecute" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c865303f-6fa6-4029-b295-bbfb22d7276a" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7661496f-97d1-4c5e-85c0-df0e581c290e" name="RelayCommand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fb24586a-6799-4caa-83da-0c15f2236339" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c47e0e8c-370c-47ba-b080-8dda69530849" name="Action" direction="In" isUnique="false">
+                  <elementDefinition Id="92490c9f-13fe-4995-b619-322f39dec481" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="be3e9945-094c-4a41-8292-f845bcb8f037" name="Predicate" direction="In" isUnique="false">
+                  <elementDefinition Id="579479ea-df39-4112-813d-22004521abbe" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="85c6ac27-f1f0-4058-bc60-46f1015f573f" name="void Execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="748c3c3f-ea39-4285-9005-3816b4734829" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="05722027-bae0-4402-99a2-b80ed8dbdec8" name="object" direction="In" isUnique="false">
+                  <elementDefinition Id="91d07c7d-d375-4b2f-8f2a-913fe63abc0a" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d7ba2f3b-e1ac-4194-beac-46c169b472a1" name="bool CanExecute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8a7ebe91-6670-4093-b4f9-c9cd6c121768" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c3c374b8-9ce7-45a6-b75f-d2cda27bfac8" name="object" direction="In" isUnique="false">
+                  <elementDefinition Id="5ed34a8f-c2e9-4d31-ae48-828caeda171e" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f8ae29fe-c18e-4bb4-a895-383551e2e320" name="event CanExecuteChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="60415810-c982-429b-b748-a9351352a9f0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="8554c43a-529d-401e-b854-be8ea71fc521" name="ICommand" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="889a895a-0bc7-4037-ace4-7e9e562f8580" />
+        <ownedOperations>
+          <operation Id="fd85049d-fe07-43eb-86f3-f7e2d912af1f" name="bool CanExecute" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8bfa7fdb-2959-4d31-8767-ebce84035352" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d03de1eb-ae26-40ae-8e7d-caf12047ebd9" name="object" direction="In" isUnique="false">
+                  <elementDefinition Id="58c31461-ca5d-48aa-a3aa-f0ec90b87007" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c658155b-ab4b-4ac9-bf52-11e3e12bba77" name="void Execute" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7850a84c-d727-41e6-a80b-c137e16d6f1b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c42015be-00ae-423a-90b6-c344c0add0bf" name="object" direction="In" isUnique="false">
+                  <elementDefinition Id="db06bf4a-b2d0-48c2-b8d5-8bd17bb1cfee" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3f7e1765-19e8-4153-bfe9-9d8382429451" name="event CanExecuteChanged" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bc5824f3-4ac2-40f2-93a4-5a862b302326" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="71540da0-965b-42ba-b7a6-f295fe885c4a" name="ViewModelBase" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0ff814cb-f1f8-47dc-9805-5724ba093da1" />
+        <suppliersInternal>
+          <interfaceRealization Id="45c389d9-d2d8-4222-9aef-f1e9406b7509">
+            <interfaceMoniker Id="1dc681fc-4b58-4cd5-b65b-cc9f4d7e0ed3" LastKnownName="INotifyPropertyChanged" />
+            <elementDefinition Id="585e149b-edd2-4ab4-8037-cc07f167100e" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="4692d83a-a8ee-444e-a080-7a3b8999ad03" name="event PropertyChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e805a537-56fb-4888-823b-c76a4ccefb4a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="1dc681fc-4b58-4cd5-b65b-cc9f4d7e0ed3" name="INotifyPropertyChanged" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d93725bf-d0bb-44b7-a548-b53d5ef92ad0" />
+        <ownedOperations>
+          <operation Id="8cd44897-9a0c-4106-8133-55777d7f378f" name="event PropertyChanged" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6e4a72ba-d059-4dda-a344-8cfc4844fb60" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="537c9736-ddb6-4b1e-b39d-1ab3b0dbab62" name="DesignPatternsUML">
+    <elementDefinition Id="bf8249b7-a100-4fa7-9ae3-822ca7af2bbd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c499aa02-83f9-4c83-a5cd-d37c74021768">
+        <profileInstance Id="7f073d80-1a2d-4cf5-8d99-e5ccd9735a9b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="71319dfb-9718-4330-975b-a25684796ebf">
+        <profileInstance Id="bac82285-b525-47c4-8dcf-0826417caea9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="827c2a31-cfe1-41d2-96e8-2a8f01968944">
+        <profileInstance Id="21315eab-3c86-453e-90f5-61af8c266519" name="CSharpProfile">
+          <elementDefinition Id="2c522e54-607e-4b06-81cf-27f4aa524a46" />
+        </profileInstance>
+        <elementDefinition Id="70c3daa7-875c-4f5a-9d83-f94e71a69e47" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

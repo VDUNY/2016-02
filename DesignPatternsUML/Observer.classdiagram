@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="35a2de4b-5c0c-46e6-bf04-bf9f019578ba" name="Observer" linkedPackageId="01d1bc77-fc3c-4a50-8654-d037322f75a9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="b3a3e967-6fa2-462e-946e-2b9de6cbe772">
+      <elementDefinition Id="aad939c0-5cf6-444d-993a-ea705b01cfbc" />
+      <body>Can break this link w/ ICE, PRISM or WCF
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c9eaf638-609d-4795-911c-be8536520fb6" name="TvStation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb80a267-654b-4f5f-91cf-df78cc163538" />
+        <targetEnds>
+          <association Id="863d6849-cc61-4e70-bc97-aae102ea04ce" isDerived="false" sourceEndRoleName="TvStation" targetEndRoleName="WxReporter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f8b45e8a-25ea-4a20-9c78-b3788635053e" LastKnownName="WxReporter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="98bcd40a-bfbe-445a-ac61-66428a909dbe" name="TvStation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d45cc1b3-5fb6-4564-96f6-c477b69e8b08" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3549d97-17eb-4fb5-9c66-64e0061906da" name="WxReporter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9becce2c-ccca-4f48-b59f-fbf2ab533a84" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1bff6e42-0c29-4fe0-bb52-8ef0fb1a027a" />
+          </association>
+          <association Id="663e8e55-4a8f-46f3-9818-e92d529a7a25" isDerived="false" sourceEndRoleName="TvStation" targetEndRoleName="WxReport" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d4260aec-e46c-4a7f-8956-62d66199fc7c" LastKnownName="WxReport" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62eafbd1-8881-4a93-ad10-89d5190e8a9c" name="TvStation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aed5fed4-1ad7-425c-adab-6daa534c9a6d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6980acac-bf61-4655-aed2-7a58ff955e19" name="WxReport" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9e8c06a1-487a-4ef0-960d-9c10b0b6db89" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa8fdbea-63ff-4a91-b9fe-fd90450c1bc8" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="f0ec3bc9-226b-4755-affc-03d1c5e297b2" name="Callsign" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="65ca5889-68f9-41b2-a0f2-e9c917745803" />
+          </property>
+          <property Id="b44ec423-d00f-40f2-8c12-3586d10fe493" name="WxReport" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8fa9a96d-3d62-4270-92c0-7d22e53364f9" />
+          </property>
+          <property Id="db04ee67-ee3e-4207-b83b-b10a4d60df9d" name="WxReporter" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="abdd4cab-f20b-4516-a379-4fcb5c172156" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="458f3397-0fef-4a61-9c60-f3ec1adfb6be" name="Run" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="310ce39f-0dd7-4e3a-9f49-f6c1791aec0c" />
+          </operation>
+          <operation Id="0bf53db7-041e-472a-b1c1-74a53cae01fe" name="Quit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2be10374-7b35-45c4-8420-a75d4fb9712b" />
+          </operation>
+          <operation Id="b148ab2d-18fe-4188-9de3-88009c8769ac" name="ReceiveWxReports" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a34d3979-6096-4ae9-bd99-d5c6244139b5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="884f291a-5a5d-4b3f-8032-fb152f2026eb" name="WxStation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ad3e1a8a-734d-4600-a6cc-d09ff754fbbf" />
+        <targetEnds>
+          <association Id="a843e2aa-3cf3-432c-9fd3-75b83e056487" isDerived="false" sourceEndRoleName="WxStation" targetEndRoleName="WxReporter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f8b45e8a-25ea-4a20-9c78-b3788635053e" LastKnownName="WxReporter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03b39a2a-9c6a-412d-8b10-f9da4417a526" name="WxStation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="447509ab-0893-40ba-b54d-023983fc960e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39d735fd-4a69-46e8-b459-79948887909d" name="WxReporter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bdb3a27c-cbf7-4539-9e42-e65e5f56c081" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="01cdaa9a-08d6-41ec-b940-ab807ca60312" />
+          </association>
+          <association Id="12b972b9-e972-47d8-ad37-05dd3280ceb7" isDerived="false" sourceEndRoleName="WxStation" targetEndRoleName="WxReport" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d4260aec-e46c-4a7f-8956-62d66199fc7c" LastKnownName="WxReport" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b15ad3b-be9b-4a9d-b817-14e739b50f5e" name="WxStation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="22cd1509-7b50-44ec-9e7e-950f71ce394e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1476e115-7a9d-4aa3-baa9-f3e75e503a5f" name="WxReport" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d3d97267-9dc4-402e-8d80-78a71a334ee1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="60bef840-da2e-4a47-ae42-d245091dc445" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="42ce1715-72cf-4802-b94d-87036a5d9a84" name="Location" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="21048e72-178b-4914-a531-90b4bb3db6bc" />
+          </property>
+          <property Id="dacffe21-b187-411c-8b4d-80901f892949" name="WxReport" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="79da2a25-5268-451d-86cd-b1824b0b47e4" />
+          </property>
+          <property Id="d13bec75-5963-4079-9985-3f66f9cc0fdc" name="WxReporter" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="087fb6c0-b63f-4074-8d71-21560cd7adbf" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="06910fcf-f3e2-4dca-8d5f-488011bd2921" name="Run" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b920c0bd-7f01-46be-a98e-fe4e365ff7b5" />
+          </operation>
+          <operation Id="efd3d6ee-0dbb-4370-8db0-7f8c1a96e170" name="Quit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a131be36-99fa-4f34-a853-87b886b723a4" />
+          </operation>
+          <operation Id="0dd9ea74-5c78-4e6d-bcc9-d5aed2018c05" name="IssueWxReports" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="027c17dc-f93e-4a22-ac42-9bdf3b86d7f6" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d4260aec-e46c-4a7f-8956-62d66199fc7c" name="WxReport" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6cfed300-6aa3-4dba-94b5-e1225cadd897" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8b45e8a-25ea-4a20-9c78-b3788635053e" name="WxReporter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6933eee1-f46c-4279-b955-62e717333214" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="01d1bc77-fc3c-4a50-8654-d037322f75a9" name="DesignPatternsUML">
+    <elementDefinition Id="bf8249b7-a100-4fa7-9ae3-822ca7af2bbd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5f0deae1-b586-4968-80b5-65909652ea3c">
+        <profileInstance Id="2cd350f0-c43b-445b-ba1d-fcc7326488db" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b91dda84-da6f-43ff-8198-18fcb42eb7e0">
+        <profileInstance Id="1b16278a-2c9b-452c-8bf0-3327b62bbaad" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f2bd6221-d45d-4220-8fa1-78042d6e6898">
+        <profileInstance Id="e66045b3-9dc7-43b1-8e96-c91d01c8e0b6" name="CSharpProfile">
+          <elementDefinition Id="2c522e54-607e-4b06-81cf-27f4aa524a46" />
+        </profileInstance>
+        <elementDefinition Id="70c3daa7-875c-4f5a-9d83-f94e71a69e47" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

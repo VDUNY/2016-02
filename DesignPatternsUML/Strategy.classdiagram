@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="76bd2f3e-f326-4dfa-b447-787e1c37739d" name="UMLClassDiagram1" linkedPackageId="a3f97976-21db-4e79-a827-fc7691c6e574" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="3283bf19-af6a-4127-ab43-6a7e13060d2a">
+      <elementDefinition Id="cd224634-d56c-4e20-96bc-7b52453eef1b" />
+      <body>Delegate the behavior. Do not implement it.</body>
+    </comment>
+    <comment Id="d16b5aac-6f24-4d6b-9276-75b21785ed8e">
+      <elementDefinition Id="e5c9f198-01a8-4f5f-b1e4-954f4d65b72f" />
+      <body>Subclasses have different behaviors.
+
+Can't modify super class.
+
+Overriding subclass methods is duplicate code.</body>
+    </comment>
+    <comment Id="9e00a5ec-c080-4ff8-be43-48f33e7464c5">
+      <elementDefinition Id="41fade0a-935b-4bca-a3f1-0e92d55fe6b4" />
+      <body>Other objects can reuse the behaviors.
+
+Add new behaviors without touching existing codebase.</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="25520043-c2e4-4fe5-b5cb-e5eb469a7f52">
+      <profileInstance Id="598cae23-8f66-4e7b-9296-141ea9256ba8" name="CSharpProfile">
+        <elementDefinition Id="2c522e54-607e-4b06-81cf-27f4aa524a46" />
+      </profileInstance>
+      <elementDefinition Id="70c3daa7-875c-4f5a-9d83-f94e71a69e47" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6f5bca7d-b71f-451d-bf25-8e242f86f88b" name="Duck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="95f8ba76-1bc0-4a2b-9ec7-236782a1d73e" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DDuck ParentType%3DStrategy_Pattern)" tag="ViewCode">
+            <elementDefinition Id="560f7a18-1fe5-4f89-90df-e995e6901e28" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="ceb3ed5f-6b65-43c3-ac20-3023fdd530e3" />
+        <ownedAttributesInternal>
+          <property Id="7cd8fc02-e55f-43fd-b66f-9619e827552e" name="flyBehavior" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="5011e016-2335-4439-8673-5c752d940825" handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DDuck ParentType%3DStrategy_Pattern) Member%3DflyBehavior" tag="ViewCode">
+                <elementDefinition Id="3146da47-d4dd-46dc-8990-44fe11830435" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="f04ab241-7a06-4028-9dee-8cef6dac3cf1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d5c09bc1-ecc0-4fa1-9e59-bae8d74b4d16" LastKnownName="IFlyBehavior" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="77afbe8f-02c2-461c-a374-a9c484e50f1e" name="PerformFly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="d3b8f0eb-93ea-4a66-8b8a-ca8cf60d5f51" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DDuck ParentType%3DStrategy_Pattern) Member%3DPerformFly" tag="ViewCode">
+                <elementDefinition Id="09b59412-9f0b-4e3f-b9be-53b16c3ff0ab" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="cc6c2e5d-7b3b-4745-97dd-89a4828fed45" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d5c09bc1-ecc0-4fa1-9e59-bae8d74b4d16" name="IFlyBehavior" isAbstract="false" isLeaf="false" cachedFullName="DesignPatternsUML::StrategyPattern::IFlyBehavior">
+        <elementDefinition Id="5b4c8a4c-9dc9-43f8-a062-5b97ce358d7e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="661c75fe-a2f3-4fc8-92ff-bdf1d42b6107" name="MallardDuck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="cb261965-8643-4004-989b-d1a479c14210" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DMallardDuck ParentType%3DStrategy_Pattern)" tag="ViewCode">
+            <elementDefinition Id="715cd5ad-fe16-4867-a806-14642a95d01a" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="d63e1565-ae93-4d86-8e45-c6af3eb1a0b4" />
+        <generalsInternal>
+          <generalization Id="33630d96-81a3-48ba-974f-d9c1d0731013" isSubstitutable="false">
+            <classMoniker Id="6f5bca7d-b71f-451d-bf25-8e242f86f88b" LastKnownName="Duck" />
+            <elementDefinition Id="8c9356eb-a345-4c38-905d-ca5f83385048" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="93bc3cf0-6538-46b8-8058-fdb0a486f3c8" name="ToyDuck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="496522ba-26b4-42b7-aedd-db01f208b2f2" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DToyDuck ParentType%3DStrategy_Pattern)" tag="ViewCode">
+            <elementDefinition Id="78ad949b-fafc-4948-8d82-778d1a2975ae" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="ae9d8a6b-ef93-4e2c-b22e-ed670a91e761" />
+        <generalsInternal>
+          <generalization Id="8eb11c4f-0d81-4509-864f-33a7022a9d21" isSubstitutable="false">
+            <classMoniker Id="6f5bca7d-b71f-451d-bf25-8e242f86f88b" LastKnownName="Duck" />
+            <elementDefinition Id="8c9e6b3a-e912-4d30-bd80-51382ccd8735" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="347e341d-9cc6-4bd3-8582-523208ea01b6" name="IFlyBehavior" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="f80de5ea-8fec-4281-8cab-24f9fc9f0556" handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DIFlyBehavior ParentType%3DStrategy_Pattern)" tag="ViewCode">
+            <elementDefinition Id="e27fd1a3-05dc-4310-aabf-11639169a30a" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="5b4c8a4c-9dc9-43f8-a062-5b97ce358d7e" />
+        <ownedOperations>
+          <operation Id="71f278e3-212d-40b3-89d2-2334292a7028" name="Fly" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="6f5c4490-e284-4f78-ab46-7822e8a2dabc" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DIFlyBehavior ParentType%3DStrategy_Pattern) Member%3DFly" tag="ViewCode">
+                <elementDefinition Id="f560828e-0219-4238-91e4-34aff650fe28" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="0084fa6e-be1b-4069-a6c0-21a1a22efc29" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="714b3aa2-5c1a-4da5-831f-1d5bf35dafc9" name="FlyWithWings" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="e8414428-bd19-46bc-a4ff-1d8d0dcd4e79" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DFlyWithWings ParentType%3DStrategy_Pattern)" tag="ViewCode">
+            <elementDefinition Id="ec4cc5a7-2bf5-45c0-ad0d-79ca95893ad7" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="84f3820f-b65b-4d37-8a4f-bcbfcb672538" />
+        <suppliersInternal>
+          <interfaceRealization Id="79b1df67-7de8-4a94-9f5d-428e777da84a">
+            <interfaceMoniker Id="347e341d-9cc6-4bd3-8582-523208ea01b6" LastKnownName="IFlyBehavior" />
+            <elementDefinition Id="8cf9108b-05f3-420b-8eae-a640c87f1403" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="9ce514e3-9337-4b26-9852-e0f6539fcb50" name="Fly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="67d63974-1ed2-4509-985f-e6aa4138a2e1" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DFlyWithWings ParentType%3DStrategy_Pattern) Member%3DFly" tag="ViewCode">
+                <elementDefinition Id="ee97ea24-8abc-4524-bd2e-cebc12206345" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="e708391a-d55e-46ef-adfc-8ec3e53ab7e4" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="92fb3a63-e426-411e-9950-d04e36474acc" name="FlyNot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="b1b1c772-cf8c-47fd-9273-a761f426a5e3" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DFlyNot ParentType%3DStrategy_Pattern)" tag="ViewCode">
+            <elementDefinition Id="45284d1f-d987-4ec7-b5aa-245ef11aa6b1" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="eb468d6b-4299-449b-80c8-be842da0144d" />
+        <suppliersInternal>
+          <interfaceRealization Id="3542e25c-861a-4e03-9b2e-30642bfcac88">
+            <interfaceMoniker Id="347e341d-9cc6-4bd3-8582-523208ea01b6" LastKnownName="IFlyBehavior" />
+            <elementDefinition Id="919a4ef7-cf6c-4abd-a255-7d1c6d5b554a" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="9d7c0873-766e-425d-982d-c64553420aba" name="Fly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="cd74d9f2-aba2-4e87-9e09-941414245e1f" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FT:%2FLle Development%2FDesignPatterns%2FBuild%2FStrategyPattern.exe&quot; Namespace%3DStrategyPattern Type%3D(Name%3DFlyNot ParentType%3DStrategy_Pattern) Member%3DFly" tag="ViewCode">
+                <elementDefinition Id="f111bccc-0ef4-4d7a-a493-516e6fd68512" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="6f1bd667-9766-4b9c-ad00-d28f4acbbfc4" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a3f97976-21db-4e79-a827-fc7691c6e574" name="DesignPatternsUML">
+    <elementDefinition Id="bf8249b7-a100-4fa7-9ae3-822ca7af2bbd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e425169b-4f4c-4959-9d62-052cf05a52d8">
+        <profileInstance Id="84aebaf2-1ff1-4fd6-a1cc-93e2abd6f3a8" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a68fc69a-9304-4ed3-a576-1c2f9f29e44f">
+        <profileInstance Id="fdf2fd77-cfab-4035-9a64-d0181be92914" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
